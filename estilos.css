@@ -22,7 +22,7 @@ body {
 }
 
 .hero {
-  background-image: url('https://via.placeholder.com/1200x400?text=Bienvenidos+a+El+Carancho+Combos');
+  background-image: url(logo.jpeg);
   background-size: cover;
   background-position: center;
   height: 60vh;
