@@ -22,7 +22,7 @@ body {
 }
 
 .hero {
-  background-image: url(logo.jpeg);
+  background-image:url(montana-de-fuego.jpg);
   background-size: cover;
   background-position: center;
   height: 60vh;
@@ -153,4 +153,10 @@ footer {
   font-size: 1.8rem;
   color: #ffcc00;
   margin-bottom: 20px;
+}
+.subtitulo-secundario {
+  font-size: 1.8rem;
+  color: #ffffff; 
+  margin-bottom: 20px;
+  font-family: "Libertinus Math", system-ui;
 }
