@@ -160,3 +160,8 @@ footer {
   margin-bottom: 20px;
   font-family: "Libertinus Math", system-ui;
 }
+.combo-card img[alt="Aderezos Clásicos"] {
+  height: 300px;
+  object-fit: contain;
+}
+
