@@ -12,10 +12,12 @@ body {
   font-family: "Libertinus Math", system-ui;
 }
 
+/* Logo centrado arriba */
 .logo {
   position: absolute;
   top: 20px;
-  left: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 120px;
   height: auto;
   z-index: 2;
@@ -25,6 +27,7 @@ body {
   background-image:url(montana-de-fuego.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 60vh;
   display: flex;
   align-items: center;
@@ -149,19 +152,75 @@ footer {
   padding: 15px;
   margin-top: 40px;
 }
+
 .subtitulo {
   font-size: 1.8rem;
   color: #ffcc00;
   margin-bottom: 20px;
 }
+
 .subtitulo-secundario {
   font-size: 1.8rem;
   color: #ffffff; 
   margin-bottom: 20px;
   font-family: "Libertinus Math", system-ui;
 }
+
 .combo-card img[alt="Aderezos Clásicos"] {
   height: 300px;
   object-fit: contain;
 }
+
+/* --- Ajustes para móviles y pantallas pequeñas --- */
+@media (max-width: 768px) {
+
+  /* Logo más pequeño */
+  .logo {
+    top: 10px;
+    width: 80px;
+  }
+
+  /* Encabezado más compacto */
+  .hero {
+    height: auto;
+    padding-top: 100px; /* espacio para logo */
+  }
+
+  /* Títulos y subtítulos más pequeños */
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .subtitulo,
+  .subtitulo-secundario {
+    font-size: 1.2rem;
+  }
+
+  /* Productos en una sola columna */
+  .combo-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Imágenes adaptadas */
+  .combo-card img {
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  /* Botones más fáciles de tocar */
+  .btn-primary,
+  .btn-secondary {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* Footer más legible */
+  footer {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
 
